@@ -62,12 +62,13 @@ messagePost="""
 </table>
 """
 messageText = ""
-receivers = ["yjy_cn21@163.com", "ycc_bj@163.com", "kfalpawx@163.com", "510540892@qq.com"]
+receivers = ["yjy_cn21@163.com"]
+#receivers = ["yjy_cn21@163.com", "ycc_bj@163.com", "kfalpawx@163.com", "510540892@qq.com"]
 
 # read db configure
 
 cf = ConfigParser.ConfigParser()
-cf.read("novo_db.conf")
+cf.read("/data/scripts/novo_db.conf")
 db_host=cf.get("novo_slave", "host")
 db_user=cf.get("novo_slave", "user")
 db_pass=cf.get("novo_slave", "pass")
